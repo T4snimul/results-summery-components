@@ -14,6 +14,9 @@
   /* Gradiant */
   --Light-slate-blue: hsla(252, 100%, 67%);
   --Light-royal-blue: hsla(241, 81%, 54%);
+  /* Tanim: My Fix Start */
+  --Light-royal-blue-opec: hsla(241, 81%, 54%, 0);
+  /* Tanim: My Fix End */
   --Violet-blue: hsla(256, 72%, 46%, 1);
   --Persian-blue: hsla(241, 72%, 46%, 0);
 
@@ -50,7 +53,11 @@ body{
 
 .card{
   width: 50%;
-  padding: 2rem;
+  /* padding: 2rem; */
+
+  /* Tanim: My Fix Start */
+  padding: 1.5rem 2rem;
+  /* Tanim: My Fix End */
 }
 
 
@@ -65,11 +72,15 @@ body{
   display: flex;
   flex-direction:column;
   align-items: center;
-  padding: 2.5rem;
+  /* padding: 2.5rem; */
 }
 
 .score {
-  background-color: var(--Violet-blue);
+  /* background-color: var(--Violet-blue); */
+
+  /* Tanim: My Fix Start */
+  background-image: linear-gradient(to top, var(--Light-royal-blue-opec) 10%, var(--Light-royal-blue) 90%);
+  /* Tanim: My Fix End */
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -113,6 +124,26 @@ body{
 
 
 
+
+/* Tanim: My Fix Start */
+.tab-fix {
+  border-radius: .5rem;
+  font-size: 13px;
+  display: flex;
+  margin-bottom: .8rem;
+  padding: .7rem;
+  align-items: center;
+  border: 2px dashed var(--Dark-gray-blue);
+}
+
+.tab-fix img {
+  margin-right: 5px;
+}
+
+.tab-fix .marks {
+  margin-left: auto;
+}
+/* Tanim: My Fix End */
 
 .tab{
   border-radius: .5rem;
